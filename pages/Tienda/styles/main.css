@@ -1,0 +1,32 @@
+@import url("../../../styles/Navbar/navbar.styles.css");
+@import url("./cuerpo.css");
+@import url("./footer.css");
+@import url("../../../styles/Top3/top.styles.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --negro: #222831;
+  --celeste-ofertas: #295ae1;
+  --celeste: #76abae;
+  --gris: #31363f;
+  --blanco: #d9d9d9;
+}
+
+a {
+  text-decoration: none;
+  color: var(--negro);
+}
+
+body {
+  font-family: "Inter";
+  padding-top: 8vh;
+}
+li {
+  list-style: none;
+}

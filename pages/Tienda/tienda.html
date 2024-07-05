@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="../../images/steam.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Tienda</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="navbar-logo">
+        <img src="/images/logo.png" alt="" />SharpGames
+      </h2>
+      <ul class="navbar-menu">
+        <li class="navbar-li">
+          <a class="navbar-a" href="/index.html">Inicio</a>
+        </li>
+        <li class="navbar-li">
+          <a class="navbar-a" href="/pages/Tienda/tienda.html">Tienda</a>
+        </li>
+        <li class="navbar-li">
+          <a class="navbar-a" href="/pages/Promociones/promociones.html"
+            >Promociones</a
+          >
+        </li>
+        <li class="navbar-li">
+          <a class="navbar-a" href="/pages/Adicionales/adicionales.html"
+            >Adicionales</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <img
+        src="../../images/banner.jpeg"
+        alt=""
+        width="100%"
+        height="550px"
+        class="baner1"
+      />
+    </div>
+    <div class="tienda">
+      <div class="categorias">
+        <div class="filtros">
+          <h2 class="categorias-titulo">Categorias</h2>
+          <ul class="filtros-lista filtro-categoria">
+            <li>
+              <input type="checkbox" id="accion" /><label for="accion"
+                >Acción</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="deportes" /><label for="deportes"
+                >Deportes</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="simulacion" /><label for="simulacion"
+                >Simulación</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="aventura" /><label for="aventura"
+                >Aventura</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="rpg" /><label for="rpg">RPG</label>
+            </li>
+            <li>
+              <input type="checkbox" id="ciencia-ficcion" /><label
+                for="ciencia-ficcion"
+                >Ciencia Ficción</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="fps" /><label for="fps">FPS</label>
+            </li>
+            <li>
+              <input type="checkbox" id="terror" /><label for="terror"
+                >Terror</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="carreras" /><label for="carreras"
+                >Carreras</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="mundo-abierto" /><label
+                for="mundo-abierto"
+                >Mundo Abierto</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="multijugador" /><label
+                for="multijugador"
+                >Multijugador</label
+              >
+            </li>
+          </ul>
+          <button class="btn-filtrar" id="filtrar">Filtrar</button>
+          <button class="btn-filtrar" id="borrar-filtro">Borrar Filtros</button>
+        </div>
+      </div>
+      <div class="juegos-contenedor juegos-tienda">
+        <section class="juegos" id="juegos">
+          <!-- Aca van las tarjetas con los juegos -->
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-seccion">
+        <span>Distribuidores</span>
+        <ul class="footer-ul">
+          <li class="footer-item">
+            <a href="" class="footer-link">Electronic Arts</a>
+          </li>
+          <li class="footer-item">
+            <a href="" class="footer-link">Epic Games</a>
+          </li>
+          <li class="footer-item">
+            <a href="" class="footer-link">Ubisoft</a>
+          </li>
+          <li class="footer-item"><a href="" class="footer-link">Sony</a></li>
+          <li class="footer-item"><a href="" class="footer-link">Mojang</a></li>
+        </ul>
+      </div>
+      <div class="footer-seccion">
+        <span>Menu de navegacion</span>
+        <ul class="footer-ul">
+          <li class="footer-item">
+            <a href="/index.html" class="footer-link">Inicio</a>
+          </li>
+          <li class="footer-item">
+            <a href="/pages/Tienda/tienda.html" class="footer-link">Tienda</a>
+          </li>
+          <li class="footer-item">
+            <a href="/pages/Promociones/promociones.html" class="footer-link"
+              >Promociones</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="/pages/Adicionales/adicionales.html" class="footer-link"
+              >Adicionales</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-seccion footer-contacto">
+        <div class="footer-redes">
+          <a href="" class="footer-link-redes">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="" class="footer-link-redes">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="footer-link-redes">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <span
+          ><i class="fa-regular fa-envelope" style="color: #ffffff"></i
+          ><a href=":">contacto@sharpgames.com</a></span
+        >
+        <span
+          ><i class="fa-solid fa-phone" style="color: #ffffff"></i> +51
+          934-121-939</span
+        >
+      </div>
+    </footer>
+    <script src="./scripts/juegos.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("../../styles/Navbar/navbar.styles.css");
+@import url("../../styles/styles.css");
+.adicionales-contenedor {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 80px;
+}
+.categorias {
+  width: 30%;
+}
+.categorias h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-family: "Inter";
+}
+.categorias .juegos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: left;
+}
+
+.categorias .juegos img {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+.categorias .juegos .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-family: "Inter";
+}
+.categorias .juegos .info h3 {
+  font-size: large;
+  font-weight: bold;
+  margin: 10px 0;
+  width: 50%;
+  font-family: "Inter";
+}
+.categorias .juegos .info p {
+  margin: 0;
+  font-family: "Inter";
+}
+.boton {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px solid black;
+  transition: transform 0.5s;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+}

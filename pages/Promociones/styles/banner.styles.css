@@ -1,0 +1,66 @@
+.banner-contenedor {
+  display: flex;
+  overflow: hidden;
+  padding-right: -10%;
+  width: 100%;
+  padding-top: 3.9%;
+}
+
+.banner-principal {
+  position: relative;
+  width: 90%;
+  height: auto;
+  padding-left: 0%;
+}
+
+.banner-imagen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.banner-texto {
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  text-align: left;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  text-align: right;
+  padding-left: 2%;
+}
+
+.banner-juego_contenedor {
+  display: flex;
+  align-items: left;
+  transition: transform 0.2s;
+}
+
+.banner-juego_contenedor:hover {
+  transform: scale(1.1);
+}
+.columna img {
+  margin: 10px 0;
+  max-width: 35%;
+  padding-top: 2%;
+}
+
+.banner-juego_descripcion {
+  font-family: "Inter";
+  color: black;
+  position: relative;
+  padding-left: 10%;
+  padding-top: 9%;
+  text-shadow: 1px 1px 2px #000;
+}

@@ -1,0 +1,78 @@
+.tienda {
+  display: flex;
+  width: 100%;
+}
+.banner {
+  height: 550px;
+  width: 100%;
+}
+.banner1 {
+  height: 100%;
+}
+
+.juegos {
+  padding: 50px 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.precio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Categorias */
+.categorias {
+  padding: 50px 20px;
+  background-color: #31363f;
+  color: white;
+  width: 20%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+  }
+}
+.juegos-contenedor {
+  width: 80%;
+  padding: 0 80px;
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.filtros-lista li input {
+  margin-right: 10px;
+}
+
+.filtros {
+  top: 30vh;
+  left: 0;
+  position: sticky;
+}
+
+.btn-filtrar {
+  background-color: var(--blanco);
+  color: var(--negro);
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}

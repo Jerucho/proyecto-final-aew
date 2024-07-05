@@ -1,0 +1,110 @@
+.opiniones-contenedor {
+  padding: 80px 0;
+  display: flex;
+  background-color: var(--gris);
+  width: 100%;
+  gap: 50px;
+  justify-content: center;
+}
+.opinion {
+  border-radius: 10px;
+  height: 400px;
+  width: 470px;
+  color: var(--blanco);
+  background-color: var(--negro-claro);
+  transition: 0.2s linear all;
+  /* Sombras */
+
+  a {
+    color: var(--blanco);
+  }
+}
+.opinion-principal {
+  height: 45%;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  img {
+    height: 140px;
+    width: 30%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}
+.opinion-datos {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.opinion-secundario {
+  height: 55%;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  background-color: var(--negro);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+#separador {
+  border: 1px solid #ffffff5f;
+  height: 70%;
+}
+
+.calificacion-texto {
+  font-weight: bold;
+}
+.opinion-calificacion {
+  gap: 10px;
+  span {
+    font-size: 1.5rem;
+  }
+  i {
+    color: gold;
+  }
+}
+
+.opinion-calificacion,
+.opinion-link {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.opinion-link a {
+  transition: 0.3s linear all;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 2px solid var(--blanco);
+  span {
+    display: none;
+    transition: 0.5s ease-in-out all;
+  }
+}
+.opinion-link a:hover {
+  background-color: var(--blanco);
+  color: var(--negro);
+  span {
+    display: inline;
+    padding-left: 10px;
+    transition: 0.2s linear all;
+  }
+}
+
+.opinion:hover {
+  transform: scale(1.05);
+
+  -webkit-box-shadow: 0px 0px 80px 0px rgba(118, 171, 174, 0.364);
+  -moz-box-shadow: 00px 0px 80px 0px rgba(118, 171, 174, 0.364);
+  box-shadow: 0px 0px 80px 0px rgba(118, 171, 174, 0.364);
+}

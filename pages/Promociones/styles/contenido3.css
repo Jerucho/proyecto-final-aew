@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.contenedor3 {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+.carta {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+.carta:hover {
+  transform: scale(1.1);
+}
+.carta img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.titulo {
+  font-family: "Inter";
+  font-size: large;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.preciofin {
+  font-family: "Inter";
+  color: #000000;
+  font-size: large;
+  font-weight: bold;
+}
+.precio1 {
+  font-family: "Inter";
+  color: black;
+  text-decoration: line-through;
+  font-size: large;
+  font-weight: bold;
+}
+.descuento {
+  background-color: #5893ff;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  margin-right: 5px;
+}

@@ -1,0 +1,14 @@
+@import url("./banner.styles.css");
+@import url("./contenido2.css");
+@import url("./contenido3.css");
+@import url("./contenido4.css");
+@import url("../../../styles/Navbar/navbar.styles.css");
+@import url("../../../styles/Top3/top.styles.css");
+@import url("../../../styles/styles.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "Inter";
+  padding-top: 0px;
+}
