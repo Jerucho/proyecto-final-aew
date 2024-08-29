@@ -53,7 +53,7 @@
         </div>
         <div class="tarjeta-juego">
           <img
-            src="https://cdn1.epicgames.com/b30b6d1b4dfd4dcc93b5490be5e094e5/offer/RDR2476298253_Epic_Games_Wishlist_RDR2_860x1148_UE_V01-860x1148-78a06414cf9e1ff9232069d4924d29fd.jpg"
+            src="./images/rdr2.jpg"
             alt="Imagen del juego"
           />
           <div class="juego-descripcion">
@@ -284,6 +284,25 @@
         >
       </div>
     </footer>
-    <script src="./scripts/carrusel.js"></script>
+    
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDePVVm-05kabNdqqcallvD5DfIRf-hn3Q",
+        authDomain: "hosting-proyecto-3804d.firebaseapp.com",
+        projectId: "hosting-proyecto-3804d",
+        storageBucket: "hosting-proyecto-3804d.appspot.com",
+        messagingSenderId: "441312741876",
+        appId: "1:441312741876:web:8b982c7b61c3666ea091a1"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>

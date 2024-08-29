@@ -16,6 +16,7 @@
   display: flex;
   list-style: none;
   gap: 10%;
+  font-weight: 500;
 }
 
 .navbar h2 {

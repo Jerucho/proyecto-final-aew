@@ -1,7 +1,4 @@
-@import url("./banner.styles.css");
-@import url("./contenido2.css");
-@import url("./contenido3.css");
-@import url("./contenido4.css");
+
 @import url("../../../styles/Navbar/navbar.styles.css");
 @import url("../../../styles/Top3/top.styles.css");
 @import url("../../../styles/styles.css");
@@ -11,4 +8,152 @@ body {
   margin: 0px;
   font-family: "Inter";
   padding-top: 0px;
+}
+
+/* banner estilos*/
+.contentendorbanner{
+width: 100%;
+height: auto;
+text-align: justify;
+padding-top:3.5%
+}
+
+#banneri{
+  width: 100%;
+  height: auto;
+  image-resolution: 1000px;
+}
+
+/*contenedor 1 estilos 50% y 20% */
+
+.mejoresf2p {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px;
+  padding: 20px;
+  background-color: #f0ebeb;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carta {
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  margin: 20px;
+  position: relative;
+}
+
+.carta-interior {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.carta-frente, .carta-atras{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tarjeta-juego img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.juego-descripcion {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.tarjeta-juego{
+  width: 100%;
+  height: auto;
+}
+
+.juego-titulo{
+  font-size: large;
+  font-weight: bold;
+  font-family: "Inter";
+  
+}
+
+.carta-atras {
+  background-color: #a8a8a8;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.carta.giro .carta-interior {
+  transform: rotateY(180deg);
+}
+
+/* footer estilos */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--negro);
+  color: var(--blanco);
+  height: 40vh;
+}
+
+footer span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer-ul {
+  min-height: 200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 15px;
+  font-size: 1rem;
+  color: var(--blanco);
+}
+
+.footer-link {
+  display: inline;
+  color: var(--blanco);
+  text-decoration: underline;
+}
+
+.footer-contacto {
+  display: flex;
+  color: var(--blanco);
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 20px;
+  & a {
+    color: var(--blanco);
+  }
+  & i {
+    padding-right: 20px;
+  }
+}
+.footer-link-redes {
+  display: inline;
+  font-size: 3rem;
+  color: var(--blanco);
 }

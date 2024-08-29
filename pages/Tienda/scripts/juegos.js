@@ -210,7 +210,7 @@ const filtrarJuegos = () => {
   // Seleccionar todos los checkboxes
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
-  // Filtrar los juegos que contengan los generos seleccionados
+  // Seleccionar los checkbox que estan seleccionados y obtener el texto del label
   const generosSeleccionados = Array.from(checkboxes)
     .filter((checkbox) => checkbox.checked)
     .map((checkbox) => checkbox.nextSibling.textContent.trim());
@@ -220,7 +220,6 @@ const filtrarJuegos = () => {
     generosSeleccionados.every((genero) => juego.generos.includes(genero))
   );
 
-  // mostrarJuegos(juegosFiltrados);
   return juegosFiltrados;
 };
 
@@ -228,6 +227,7 @@ botonFiltrar.addEventListener("click", () => {
   contenedor.innerHTML = "";
   const juegosFiltrados = filtrarJuegos();
 
+  // Si no encuentra juegos con los generos seleccionados, mostrar mensaje
   if (juegosFiltrados.length === 0) {
     const mensaje = document.createElement("div");
     mensaje.innerHTML = `<div class="mensaje">
@@ -235,14 +235,18 @@ botonFiltrar.addEventListener("click", () => {
     </div>`;
     contenedor.appendChild(mensaje);
   }
+  //  Mostrar los juegos filtrados
   mostrarJuegos(juegosFiltrados);
 });
 
+// Limpiar los filtros
 botonLimpiar.addEventListener("click", () => {
   contenedor.innerHTML = "";
   mostrarJuegos(juegos);
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach((checkbox) => (checkbox.checked = false));
 });
+
+// Mostrar todos los juegos al cargar la pagina
 
 mostrarJuegos(juegos);
